@@ -13,18 +13,30 @@
     <link href="plugins/OwlCarousel2-2.2.1/animate.css" rel="stylesheet" type="text/css">
     <link href="styles/financial.css" rel="stylesheet" type="text/css">
     <link href="styles/financial_responsive.css" rel="stylesheet" type="text/css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151006245-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151006245-1');
+    </script>
 </head>
 <body>
 
 <div class="super_container">
 
     <!-- Home -->
-
     <div class="home">
         <div class="home_slider_container">
 
             <!-- Home Slider -->
-
             <div class="owl-carousel owl-theme home_slider">
 
                 <!-- Slider Item -->
@@ -102,14 +114,15 @@
             </div>
 
             <div class="home_slider_nav home_slider_prev d-flex flex-column align-items-center justify-content-center">
-                <img alt="" src="images/arrow_l.png"></div>
+                <img alt="" src="images/arrow_l.png">
+            </div>
             <div class="home_slider_nav home_slider_next d-flex flex-column align-items-center justify-content-center">
-                <img alt="" src="images/arrow_r.png"></div>
+                <img alt="" src="images/arrow_r.png">
+            </div>
 
         </div>
 
         <!-- Header -->
-
         <header class="header">
 
             <!-- Top Bar -->
@@ -129,20 +142,24 @@
                                 </div>
                                 <div class="top_bar_content ml-auto">
                                     <div class="main_menu_contact">
-                                        <div class="main_menu_phone"><img alt="" class="svg"
-                                                                          src="images/phone-call.svg"><span>+825 25 800 800</span>
+                                        <div class="main_menu_phone">
+                                            <a href="tel:+97143889090" target="_blank">
+                                                <img alt="" class="svg" src="images/phone-call.svg">
+                                                <span>+971 4 388 9090</span>
+                                            </a>
                                         </div>
-                                        <div class="main_menu_email"><img alt="" class="svg"
-                                                                          src="images/envelope.svg"><span>office@invest.com</span>
+                                        <div class="main_menu_email">
+                                            <a href="mailto:info@GreatFieldTrading.com" target="_blank">
+                                                <img alt="" class="svg" src="images/envelope.svg">
+                                                <span>info@GreatFieldTrading.com</span>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="main_menu_social">
                                         <ul>
-                                            <li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
                                             <li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i aria-hidden="true" class="fa fa-reddit-alien"></i></a>
-                                            </li>
-                                            <li><a href="#"><i aria-hidden="true" class="fa fa-behance"></i></a></li>
+                                            <li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a></li>
                                             <li><a href="#"><i aria-hidden="true" class="fa fa-instagram"></i></a></li>
                                         </ul>
                                     </div>
@@ -164,12 +181,12 @@
                             <div class="main_menu_container d-flex flex-row align-items-center justify-content-start">
                                 <div class="main_menu_content">
                                     <ul class="main_menu_list">
-                                        <li class="active hassubs">
+                                        <li class="active">
                                             <a href="#">Home</a>
                                         </li>
                                         <li>
                                             <a href="./about.html">About Us</a>
-										</li>
+                                        </li>
                                         <li class="hassubs">
                                             <a href="services.html">Services
                                                 <svg enable-background="new 0 0 9 5" height="5px" id="Layer_5"
@@ -185,9 +202,9 @@
 												</svg>
                                             </a>
                                             <ul>
-                                                <li><a href="#">Menu Item</a></li>
-                                                <li><a href="#">Menu Item</a></li>
-                                                <li><a href="#">Menu Item</a></li>
+                                                <li><a href="./equity.html">Equity Investments</a></li>
+                                                <li><a href="./real-estate.html">Real Estate</a></li>
+                                                <li><a href="./bitumen.html">Bitumen</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="./contact.html">Contact</a></li>
@@ -202,25 +219,12 @@
             <!-- Menu -->
 
             <div class="menu">
-                <div class="menu_register_login">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <div class="menu_register_login_content d-flex flex-row align-items-center justify-content-end">
-                                    <div class="register"><a href="#">register</a></div>
-                                    <div class="login"><a href="#">login</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
                 <ul class="menu_list">
                     <li class="menu_item">
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <a href="#">home</a>
+                                    <a href="./index.html">Home</a>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +233,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <a href="about.html">about us</a>
+                                    <a href="./about.html">About Us</a>
                                 </div>
                             </div>
                         </div>
@@ -238,7 +242,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <a href="listings.html">services</a>
+                                    <a href="./services.html">Services</a>
                                 </div>
                             </div>
                         </div>
@@ -247,25 +251,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col">
-                                    <a href="news.html">portfolio</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu_item">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="contact.html">blog</a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="menu_item">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="contact.html">contact</a>
+                                    <a href="./contact.html">Contact</a>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +262,6 @@
     </div>
 
     <!-- Features -->
-
     <div class="features">
         <div class="container">
             <div class="row">
@@ -591,27 +576,43 @@
     </div>
 
     <!-- Google Map -->
-
     <div class="map">
         <div class="google_map" id="google_map">
             <div class="map_container">
-                <div id="map"></div>
+                <iframe allowfullscreen=""
+                        aria-hidden="false" frameborder="0" height="600"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6423.716637834553!2d55.278054992771615!3d25.213667427398313!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f428c4b20d9c1%3A0xda2a93cfee3dee03!2sAl%20Saqr%20Business%20Tower!5e0!3m2!1sen!2sin!4v1584265403145!5m2!1sen!2sin"
+                        style="border:0;"
+                        tabindex="0" width="2000"></iframe>
+                <!--<div id="map"></div>-->
             </div>
         </div>
         <div class="map_contact">
             <div class="map_contact_inner d-flex flex-column align-items-start justify-content-center">
                 <div class="map_contact_title">Head Office</div>
                 <ul>
-                    <li>Address: 1481 Creekside Lane Avila Beach, CA 93424</li>
-                    <li>Phone: +53 345 7953 32453</li>
-                    <li>Email: yourmail@gmail.com</li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/gyUi6txpv6sNNLZk6" target="_blank">
+                            Address:
+                            <span>Unit 23, Floor 35, Al-Saqr Business Tower, Sheykh Zayed Road, Dubai, UAE</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+97143889090" target="_blank">
+                            Phone: <span>+971 4 388 9090</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:info@GreatFieldTrading.com" target="_blank">
+                            Email: <span>info@GreatFieldTrading.com</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -622,34 +623,27 @@
                         <div class="logo_container footer_logo">
                             <div class="logo">
                                 <a href="#">
-                                    <div class="logo_line_1"><span>in</span>vest</div>
-                                    <div class="logo_line_2">Blockchain</div>
+                                    <div class="logo_line_1"><span>Great</span> Fields</div>
+                                    <div class="logo_line_2">Investments</div>
                                     <div class="logo_img"><img alt="" src="images/logo.png"></div>
                                 </a>
                             </div>
                         </div>
-                        <p class="footer_about_text">Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci,
-                            lobortis egestas sem. Morbi ut dapibus dui. Sed ut iaculis elit. Integer ut imperdiet erat.
-                            Quisque ultricies lectus tellus, eu tristique magna pharetra nec.</p>
+                        <p class="footer_about_text">The Great Fields Investment Company is based out of Dubai, with a
+                            focus on commodities trading and the surrounding infrastructure investments. The management
+                            team has a combined experience of over 50 years in the global commodities market.</p>
                     </div>
                 </div>
 
                 <!-- Footer Column -->
                 <div class="col-lg-3 footer_col">
                     <div class="footer_links">
-                        <div class="footer_title">Useful Links</div>
+                        <div class="footer_title">Navigational Links</div>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Case Studies</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Consulting</a></li>
-                            <li><a href="#">Commodities</a></li>
-                            <li><a href="#">Insurance</a></li>
-                            <li><a href="#">Trades</a></li>
-                            <li><a href="#">Planning</a></li>
-                            <li><a href="#">Finance</a></li>
-                            <li><a href="#">Crypto</a></li>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./about.html">About</a></li>
+                            <li><a href="./services.html">Services</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -663,16 +657,13 @@
                                    type="email">
                             <button class="footer_newsletter_button" type="submit">subscribe</button>
                         </form>
-                        <div class="footer_newsletter_text">Sed ut iaculis elit, quis varius mauris. Integer ut
-                            ultricies orci, lobortis egestas sem. Morbi ut dapibus dui. Sed ut iaculis elit. Integer ut
-                            imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec.
-                        </div>
+                        <div class="footer_newsletter_text"></div>
                         <div class="footer_social">
                             <ul>
-                                <li><a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i aria-hidden="true" class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#"><i aria-hidden="true" class="fa fa-reddit-alien"></i></a></li>
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li>
                                 <li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -689,9 +680,7 @@
                             <div class="cr">
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                                All rights reserved | This template is made with <i aria-hidden="true"
-                                                                                    class="fa fa-heart-o"></i> by <a
-                                    href="https://DotEvolve.co.in" target="_blank">DotEvolve</a>
+                                All rights reserved | Powered by <a href="https://DotEvolve.co.in" target="_blank">DotEvolve</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </div>
                         </div>
@@ -700,18 +689,14 @@
                 <div class="col-md-8 order-md-2 order-1">
                     <nav class="footer_nav d-flex flex-row align-items-center justify-content-md-end">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
-</div>
-</footer>
+    </footer>
 </div>
 
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -722,5 +707,29 @@
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
 <script src="js/financial_custom.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyA51yF3xB0jdxtBF3wNuk8mcZnsEuukffw",
+        authDomain: "great-fields.firebaseapp.com",
+        databaseURL: "https://great-fields.firebaseio.com",
+        projectId: "great-fields",
+        storageBucket: "great-fields.appspot.com",
+        messagingSenderId: "1056718481807",
+        appId: "1:1056718481807:web:ba5fa9be3cdda13ecac3fa",
+        measurementId: "G-47FXV0KH5H"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
 </body>
 </html>
