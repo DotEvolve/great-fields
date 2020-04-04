@@ -11,6 +11,8 @@
     <link href="styles/contact.css" rel="stylesheet" type="text/css">
     <link href="styles/contact_responsive.css" rel="stylesheet" type="text/css">
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151006245-1"></script>
     <script>
@@ -32,7 +34,7 @@
     <!-- Home -->
 
     <div class="home">
-        <div class="home_background parallax-window" data-image-src="images/contact_background.jpg"
+        <div class="home_background parallax-window" data-image-src="images/background_image.png"
              data-parallax="scroll" data-speed="0.8"></div>
         <div class="container">
             <div class="row">
@@ -42,7 +44,7 @@
                             <div class="home_title">Contact</div>
                             <div class="home_breadcrumbs">
                                 <ul>
-                                    <li><a href="financial.html">Home</a></li>
+                                    <li><a href="index.html">Home</a></li>
                                     <li>Contact</li>
                                 </ul>
                             </div>
@@ -248,17 +250,17 @@
                         <div class="section_title">Get in touch</div>
                     </div>
                     <div class="contact_form_container">
-                        <form action="#" class="contact_form">
+                        <form method="post" onsubmit="submitForm()" class="contact_form">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input class="input_item" placeholder="Your Name" required="required" type="text">
+                                    <input class="input_item" id="name" placeholder="Your Name" required="required" type="text">
                                 </div>
                                 <div class="col-md-6">
-                                    <input class="input_item" placeholder="Your E-mail" required="required"
+                                    <input class="input_item" id="email" placeholder="Your E-mail" required="required"
                                            type="email">
                                 </div>
                                 <div class="col-md-6">
-                                    <input class="input_item" placeholder="Your Phone" type="text">
+                                    <input class="input_item" id="phone" placeholder="Your Phone" type="text">
                                 </div>
                                 <div class="col-md-6">
                                     <select class="dropdown_item input_item">
@@ -268,13 +270,14 @@
                                 </div>
                                 <div class="col-md-12">
                                     <textarea class="input_item contact_message"
+                                              id="message"
                                               data-error="Please, write us a message." id="contact_message"
                                               name="message" placeholder=" Your Message"
                                               required="required"></textarea>
                                 </div>
                                 <div class="col-md-12">
                                     <button class="contact_button trans_200" id="contact_btn" type="submit"
-                                            value="Submit">submit
+                                            value="Submit" onclick="submitForm()">submit
                                     </button>
                                 </div>
                             </div>
@@ -464,5 +467,24 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
 </script>
+<script>
+    function submitForm() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const message = document.getElementById("message").value;
+
+        Email.send({
+            SecureToken : "4d76ae4a-bcd9-4353-a00b-66441bf57520",
+            To : 'd@DotEvolve.co.in',
+            From : "d@DotEvolve.co.in",
+            Subject : "Message to GreatFields Investments",
+            Body : message
+        }).then(
+            message => alert("mail sent successfully")
+        );
+    }
+</script>
+
 </body>
 </html>
