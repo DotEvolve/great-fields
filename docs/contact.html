@@ -293,7 +293,7 @@
                                               required="required"></textarea>
                                 </div>
                                 <div class="col-md-12">
-                                    <button class="contact_button trans_200" id="contact_btn" type="submit"
+                                    <button class="contact_button trans_200" id="contact_btn" type="button"
                                             value="Submit" onclick="submitForm()">submit
                                     </button>
                                 </div>
@@ -487,7 +487,7 @@
         const type = document.getElementById("type").value;
         const message = document.getElementById("message").value;
 
-        if (name.length === 0 || email.length === 0 || mobile.length === 0 || message.length === 0) {
+        if (name.length === 0 || email.length === 0 || phone.length === 0 || message.length === 0) {
             document.getElementById("message_incomplete_form").style.display = 'block';
             return;
         }
@@ -500,12 +500,12 @@
             ],
             From : "mailer@greatfieldinvestments.com",
             Subject : "Message to GreatFields Investments",
-            Body : "WeMessage has been recorded as below" +
-                "\nName: " + name +
-                "\nEmail: " + email +
-                "\nPhone: " + phone +
-                "\nType of contact: " + type +
-                "\nOriginal message: " + message
+            Body : "Message has been recorded as follows " +
+                "\n     Name: " + name +
+                "\n     Email: " + email +
+                "\n     Phone: " + phone +
+                "\n     Type of contact: " + type +
+                "\n     Original message: " + message
         }).then(function () {
             document.getElementById("message_success").style.display = 'block';
             const form = document.getElementsByName('contact-form')[0];
