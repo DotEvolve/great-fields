@@ -67,3 +67,4 @@ node_modules/
 # IDE files
 .idea/
 .vs/
+.idea/workspace.xml
