@@ -1013,6 +1013,7 @@ section
 .points_container
 {
 	margin-top: 108px;
+	cursor: pointer;
 }
 .point
 {
