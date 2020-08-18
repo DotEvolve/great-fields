@@ -295,6 +295,10 @@
 		width: calc((100% - 15px) / 2);
 		margin-right: 15px;
 	}
+	.features_image img
+	{
+		max-width: 100%;
+	}
 	.features_image_1
 	{
 		width: calc((100% - 15px) / 2);
