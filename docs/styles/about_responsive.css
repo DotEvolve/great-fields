@@ -292,12 +292,8 @@
 	}
 	.features_image
 	{
-		width: calc((100% - 15px) / 2);
+		width: calc(100% - 15px);
 		margin-right: 15px;
-	}
-	.features_image img
-	{
-		max-width: 100%;
 	}
 	.features_image_1
 	{

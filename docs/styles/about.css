@@ -1034,7 +1034,8 @@ section
 	float: left;
 }
 .features_image_1 img,
-.features_image_2 img
+.features_image_2 img,
+.features_image img
 {
 	max-width: 100%;
 }
